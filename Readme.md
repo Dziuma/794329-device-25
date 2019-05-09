@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Oleksandr Dziuma](https://up.htmlacademy.ru/htmlcss/25/user/794329).
-* Наставник: `Андрей Грачев`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
