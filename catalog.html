@@ -58,6 +58,47 @@
                 <li class="breadcrumgs-current">Моноподы для селфи</li>
             </ul>
             
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="filter-form" action="#" method="get">
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <p>
+                            <input id="black" type="checkbox" name="color-black" checked>
+                            <label for="black">Черный</label>
+                        </p>
+                        <p>
+                            <input id="white" type="checkbox" name="color-white">
+                            <label for="white">Белый</label>
+                        </p>
+                        <p>
+                            <input id="blue" type="checkbox" name="color-blue" checked>
+                            <label for="blue">Синий</label>
+                        </p>
+                        <p>
+                            <input id="red" type="checkbox" name="color-red" checked>
+                            <label for="red">Красный</label>
+                        </p>
+                        <p>
+                            <input id="pink" type="checkbox" name="color-pink">
+                            <label for="pink">Розовый</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <p>
+                            <input id="blutooth-yes" type="radio" name="bluetooth" value="blutooth-yes" checked>
+                            <label for="blutooth-yes">Есть</label>
+                        </p>
+                        <p>
+                            <input id="bluetooth-no" type="radio" name="bluetooth" value="bluetooth-no">
+                            <label for="bluetooth-no">Нет</label>
+                        </p>
+                    </fieldset>
+                    <button class="button" type="submit">Показать</button>
+                </form>
+            </section>
+            
             <section class="catalog">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
                 <ul class="catalog-list">
@@ -128,17 +169,31 @@
             </ul>
             <a class="footer-tel" href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
             <ul class="footer-social">
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-icon social-icon_vkontakte visually-hidden" href="#">Вконтакте</a></li>
+                <li><a class="social-icon social-icon_facebook visually-hidden" href="#">Фейсбук</a></li>
+                <li><a class="social-icon social-icon_instagram visually-hidden" href="#">Инстаграм</a></li>
             </ul>
             <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </footer>
         
-        <div class="modal modal-login">
-            <!-- Здесь будет форма -->
-            <span class="modal-close">x</span>
-        </div>
-
+        <section class="modal modal-message">
+            <h2 class="visually-hidden">Отправьте нам письмо</h2>
+            <form class="message-form" action="#" method="post">
+                <p class="message-item">
+                    <label for="name-field">Ваше имя:</label>
+                    <input id="name-field" type="text" name="user-name" placeholder="Имя Фамилия">
+                </p>
+                <p class="message-item">
+                    <label for="email-field">Ваш e-mail:</label>
+                    <input id="email-field" type="email" name="user-email" placeholder="email@example.com">
+                </p>
+                <p class="message-item">
+                    <label for="message-field">Текст письма:</label>
+                    <textarea id="message-field" type="text" name="user-message" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" aria-label="Закрыть форму для отправки писем"></button>
+        </section>
     </body>
 </html>
