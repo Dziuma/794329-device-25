@@ -275,57 +275,37 @@ a {
     opacity: 0.3;
 }
 
+.modal-message {
+    background-color: #ffffff;
+}
 
+.message-form label {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
 
+.message-form input,
+.message-form textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    
+    background-color: #f2f2f2;
+    border: none;
+}
 
+.message-form input:hover,
+.message-form textarea:hover {
+    background-color: #eaeaea;
+}
 
+.message-form input:focus,
+.message-form textarea:focus {
+    outline: 3px solid #f7e296;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.message-form input:invalid {
+    background-color: #f6dada;
+}
