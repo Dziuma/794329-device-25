@@ -1,4 +1,4 @@
-* text eol=lf
+* text eol=crlf
 
 *.png binary
 *.jpg binary
@@ -6,3 +6,7 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+*.svg binary
+
+.gitattributes text
+.gitattributes export-ignore
