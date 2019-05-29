@@ -229,6 +229,10 @@ a {
     opacity: 0.6;
 }
 
+.main-footer a:hover .icon-text {
+    opacity: 1;
+}
+
 .main-footer a:active {
     opacity: 0.3;
 }
@@ -243,13 +247,10 @@ a {
 }
 
 .login-link a:hover img,
+.user-name a:hover img,
 .compare a:hover img,
 .cart a:hover img {
     opacity: 0.6;
-}
-
-.main-footer a:hover .icon-text {
-    opacity: 1;
 }
 
 .footer-address,
@@ -308,4 +309,117 @@ a {
 
 .message-form input:invalid {
     background-color: #f6dada;
+}
+
+/* CATALOG */
+
+.logout-link a {
+    opacity: 0.3;
+}
+
+.page-title {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.breadcrumbs {
+    list-style: none;
+    opacity: 0.3;
+    
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.breadcrumbs a {
+    font: inherit;
+    color: #000000;
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+    opacity: 0.1;
+}
+
+.filters-title,
+.sorting-title {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.sorting-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sorting-item a {
+    color: #000000;
+    opacity: 0.3;
+}
+
+a.sorting-item-active {
+    opacity: 1;
+}
+
+.sorting-item a:hover:not(.sorting-item-active) {
+    opacity: 0.6;
+}
+
+.sorting-item a:active:not(.sorting-item-active) {
+    opacity: 1;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-title a {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.catalog-item img:hover {
+    opacity: 0.7;
+}
+
+.price {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+
+.catalog-item .compare-button {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.main-footer .logout-link a {
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+.main-footer .logout-link a:hover {
+    opacity: 1;
+}
+
+.main-footer .logout-link a:active {
+    opacity: 0.3;
 }

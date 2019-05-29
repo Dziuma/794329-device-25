@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a href="index.html" class="main-header-logo">
+                <a class="main-header-logo" href="index.html">
                     <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет магазина Device">
                 </a>
                 <div class="top-navigation">
-                    <span class="search">Поиск по сайту</span>
+                    <form class="search-form" action="#" method="get">
+                       <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                        <input class="search-icon" id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+                        <button class="search-button" type="submit">Найти</button>
+                    </form>
                     <ul class="user-navigation">
                         <li class="user-name"><a href="#">Валентин Петухов</a></li>
                         <li class="logout-link"><a href="#">Выйти</a></li>
@@ -59,7 +66,7 @@
             </ul>
             
             <section class="filters">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <h2 class="filters-title">Фильтр:</h2>
                 <form class="filter-form" action="#" method="get">
                     <fieldset>
                         <legend>Цвет</legend>
@@ -101,6 +108,22 @@
             
             <section class="catalog">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
+                <div class="sorting">
+                    <p class="sorting-title">Сортировка:</p>
+                    <ul class="sorting-list">
+                        <li class="sorting-item">
+                            <a class="sorting-item-active" href="#">По цене</a>
+                        </li>
+                        <li class="sorting-item">
+                            <a href="#">По типу</a>
+                        </li>
+                        <li class="sorting-item">
+                            <a href="#">По популярности</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="sorting-up visually-hidden">По убыванию</a>
+                    <a href="#" class="sorting-down visually-hidden">По возростанию</a>
+                </div>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <h3 class="catalog-item-title">
@@ -110,7 +133,7 @@
                         <p class="image-container">
                             <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                             <button class="button" type="button">В корзину</button>
-                            <button class="compare-button" type="button">Добавить к сравнению</button>
+                            <button class="button compare-button" type="button">Добавить к сравнению</button>
                         </p>
                     </li>
                     <li class="catalog-item">
@@ -121,7 +144,7 @@
                         <p class="image-container">
                             <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                             <button class="button" type="button">В корзину</button>
-                            <button class="compare-button" type="button">Добавить к сравнению</button>
+                            <button class="button compare-button" type="button">Добавить к сравнению</button>
                         </p>
                     </li>
                     <li class="catalog-item">
@@ -132,7 +155,7 @@
                         <p class="image-container">
                             <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                             <button class="button" type="button">В корзину</button>
-                            <button class="compare-button" type="button">Добавить к сравнению</button>
+                            <button class="button compare-button" type="button">Добавить к сравнению</button>
                         </p>
                     </li>
                     <li class="catalog-item">
@@ -143,23 +166,31 @@
                         <p class="image-container">
                             <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                             <button class="button" type="button">В корзину</button>
-                            <button class="compare-button" type="button">Добавить к сравнению</button>
+                            <button class="button compare-button" type="button">Добавить к сравнению</button>
                         </p>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="main-footer">
-            <a class="footer-logo">
+            <a class="footer-logo" href="index.html">
                 <img src="img/footer-logo.svg" width="163" height="35" alt="Логотип магазина Device">
             </a>
             <ul class="user-navigation">
-                <li class="user-name"><a href="#">Валентин Петухов</a></li>
-                <li class="logout-link"><a href="#">Выйти</a></li>
+                <li class="user-name">
+                    <a href="#"><img src="img/footer-user.svg" width="13" height="12" alt=""><i class="icon-text">Валентин Петухов</i></a>
+                </li>
+                <li class="logout-link">
+                    <a href="#">Выйти</a>
+                </li>
             </ul>
             <ul class="purchase">
-                <li class="compare"><a href="#">Сравнить</a></li>
-                <li class="cart"><a href="#">Корзина</a></li>
+                <li class="compare">
+                    <a href="#"><img src="img/footer-compare.svg" width="10" height="10" alt=""><i class="icon-text">Сравнить</i></a>
+                </li>
+                <li class="cart">
+                    <a href="#"><img src="img/footer-cart.svg" width="12" height="12" alt=""><i class="icon-text">Корзина</i></a>
+                </li>
             </ul>
             <p class="footer-address">г. Москва, ул. Строителей, 15</p>    
             <ul class="footer-navigation">
