@@ -21,6 +21,7 @@ body {
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
+    letter-spacing: 0.15px;
     
     background-color: #ffffff;
 }
@@ -33,11 +34,11 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 800;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3.6px;
     
     border: none;    
     background-color: transparent;
@@ -97,13 +98,13 @@ a {
     color: #000000;
 }
 
-.site-navigation > li > a {
+.site-navigation-item > a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 5px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
 }
 
 .main-navigation a:hover {
@@ -114,6 +115,10 @@ a {
     opacity: 0.3;
 }
 
+.sub-menu a {
+    line-height: 36px;
+}
+
 .promo-slider-list {
     list-style: none;
 }
@@ -122,15 +127,18 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 179.2px;
     line-height: 179.2px;
-    font-weight: bold;
+    font-weight: 800;
     color: #ffffff;
+    letter-spacing: 1.79px;
+    background-color: #ccc;
 }
 
 .promo-item-lead {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     line-height: 56px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0.47px;
 }
 
 .promo-item-info {
@@ -141,13 +149,15 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: 0.36px;
 }
 
 .promo-item-features th {
     font-size: 13px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 300;
     color: #464646;
+    letter-spacing: 0.13px;
 }
 
 .catalog-menu-list {
@@ -170,8 +180,9 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 800;
     color: #000000;
+    letter-spacing: 0.18px;
 }
 
 .catalog-menu-item a:active {
@@ -192,7 +203,8 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0.47px;
 }
 
 .slider-service-text p {
@@ -214,7 +226,8 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0.16px;
 }
 
 .main-footer {
@@ -239,9 +252,10 @@ a {
 
 .main-footer .icon-text {
     font-size: 15px;
-    line-height: 30px;
+    line-height: 36px;
     font-style: normal;
     color: #ffffff;
+    letter-spacing: 0.15px;
     
     opacity: 0.7;
 }
@@ -256,6 +270,7 @@ a {
 .footer-address,
 .footer-tel {
     color: #ffffff;
+    letter-spacing: 0;
 }
 
 .footer-navigation a {
@@ -264,8 +279,8 @@ a {
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 4px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
 }
 
 .footer-navigation a:hover {
@@ -284,7 +299,8 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0;
 }
 
 .message-form input,
@@ -292,6 +308,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: 0;
     
     background-color: #f2f2f2;
     border: none;
@@ -321,7 +338,8 @@ a {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0.47px;
 }
 
 .breadcrumbs {
@@ -330,6 +348,8 @@ a {
     
     font-size: 14px;
     line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
 }
 
 .breadcrumbs a {
@@ -345,14 +365,44 @@ a {
     opacity: 0.1;
 }
 
+.filters {
+    background-color: #efefef;
+}
+
 .filters-title,
 .sorting-title {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: bold;
-    letter-spacing: 4px;
+    font-weight: 800;
+    letter-spacing: 3.2px;
     text-transform: uppercase;
+}
+
+.filters-title {
+    background-color: #dcdcdc;
+}
+
+.filter-form  fieldset {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.18px;
+    
+    border: none;
+}
+
+.filter-form label {
+    font-family 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+}
+
+.sorting {
+    background-color: #efefef;
 }
 
 .sorting-list {
@@ -360,6 +410,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+    letter-spacing: 0;
 }
 
 .sorting-item a {
@@ -387,28 +438,41 @@ a.sorting-item-active {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 0.18px;
     color: #000000;
 }
 
 .catalog-item img:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .price {
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0.16px;
     color: #464646;
 }
 
-.catalog-item .compare-button {
+.compare-button {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 36px;
     font-weight: 300;
     text-transform: none;
-    letter-spacing: normal;
+    letter-spacing: 0.13px;
+    
+    opacity: 0.5;
+}
+
+.compare-button:hover {
+    opacity: 1;
+}
+
+.compare-button:active {
+    opacity: 0.2;
 }
 
 .main-footer .logout-link a {
