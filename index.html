@@ -19,7 +19,8 @@
                     <div class="top-navigation">
                         <form class="search-form" action="#" method="get">
                             <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                            <input class="search-icon" id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+                            <input id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+                            <span class="search-icon"></span>
                             <button class="search-button" type="submit">Найти</button>
                         </form>
                         <div class="navigation-wrapper">
@@ -33,30 +34,30 @@
                         </div>
                     </div>
                     <ul class="site-navigation">
-                        <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a>
+                        <li class="site-navigation-item plus-sign"><a>Каталог товаров</a>
                             <ul class="dropdown">
-                                <li>
+                                <li class="col-1">
                                     <ul class="sub-menu">
                                         <li><a href="#">Виртуальная реальность</a></li>
                                         <li><a href="#">Моноподы для селфи</a></li>
                                         <li><a href="#">Экшн-камеры</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="col-2">
                                     <ul class="sub-menu">
                                         <li><a href="#">Фитнес-браслеты</a></li>
                                         <li><a href="#">Умные часы</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="col-3">
                                     <ul class="sub-menu">
                                         <li><a href="#">Квадрокоптеры</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="navigation-wrapper" aria-label="Подменю">
-                            <ul>
+                        <li aria-label="Подменю">
+                            <ul class="navigation-wrapper">
                                 <li class="site-navigation-item"><a href="#">Доставка</a></li>
                                 <li class="site-navigation-item"><a href="#">Гарантия</a></li>
                                 <li class="site-navigation-item"><a href="#">Контакти</a></li>
@@ -73,7 +74,9 @@
                     <h2 class="visually-hidden">Слайди</h2>
                     <ul class="promo-slider-list">
                         <li class="promo-item">
-                            <img class="promo-item-image" src="img/slider-image-1.png" width="384" height="486" alt="Палка для селфи">
+                            <div class=".promo-image-container">
+                                <img class="promo-item-image" src="img/slider-image-1.png" width="384" height="486" alt="Палка для селфи">
+                            </div>
                             <div class="promo-item-text">
                                 <span class="promo-item-count">01</span>
                                 <p class="promo-item-lead">Делай селфи,<br> как Бен Стиллер!</p>
@@ -96,7 +99,9 @@
                             </div>
                         </li>
                         <li class="promo-item">
-                            <img class="promo-item-image" src="img/slider-image-2.png" width="345" height="485" alt="Фитнес-браслет">
+                            <div class=".promo-image-container">
+                                <img class="promo-item-image" src="img/slider-image-2.png" width="345" height="485" alt="Фитнес-браслет">
+                            </div>
                             <div class="promo-item-text">
                                 <span class="promo-item-count">02</span>
                                 <p class="promo-item-lead">Худеем правильно!</p>
@@ -115,7 +120,9 @@
                             </div>
                         </li>
                         <li class="promo-item">
-                            <img class="promo-item-image" src="img/slider-image-3.png" width="526" height="334" alt="Квадрокоптер">
+                            <div class=".promo-image-container">
+                                <img class="promo-item-image" src="img/slider-image-3.png" width="526" height="334" alt="Квадрокоптер">
+                            </div>
                             <div class="promo-item-text">
                                 <span class="promo-item-count">03</span>
                                 <p class="promo-item-lead">Порхает как бабочка, жалит как пчела!</p>
