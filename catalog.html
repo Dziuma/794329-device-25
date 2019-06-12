@@ -6,8 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-    </head>
+    </head>    
     <body class="inner-page">
+       
         <div class="wrapper">
             <header class="main-header">
                 <nav class="main-navigation">
@@ -17,7 +18,8 @@
                     <div class="top-navigation">
                         <form class="search-form" action="#" method="get">
                            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                            <input class="search-icon" id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+                            <input id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+                            <span class="search-icon"></span>
                             <button class="search-button" type="submit">Найти</button>
                         </form>
                         <div class="navigation-wrapper">
@@ -32,30 +34,30 @@
                         </div>
                     </div>
                     <ul class="site-navigation">
-                        <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a>
+                        <li class="site-navigation-item plus-sign"><a href="catalog.html">Каталог товаров</a>
                             <ul class="dropdown">
-                                <li>
+                                <li class="col-1">
                                     <ul class="sub-menu">
                                         <li><a href="#">Виртуальная реальность</a></li>
                                         <li><a href="#">Моноподы для селфи</a></li>
                                         <li><a href="#">Экшн-камеры</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="col-2">
                                     <ul class="sub-menu">
                                         <li><a href="#">Фитнес-браслеты</a></li>
                                         <li><a href="#">Умные часы</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="col-3">
                                     <ul class="sub-menu">
                                         <li><a href="#">Квадрокоптеры</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="navigation-wrapper" aria-label="Подменю">
-                            <ul>
+                        <li aria-label="Подменю">
+                            <ul class="navigation-wrapper">
                                 <li class="site-navigation-item"><a href="#">Доставка</a></li>
                                 <li class="site-navigation-item"><a href="#">Гарантия</a></li>
                                 <li class="site-navigation-item"><a href="#">Контакти</a></li>
@@ -66,7 +68,7 @@
             </header>
         </div>
         
-        <main class="container">
+        <main>
             <div class="wrapper">
                 <h1 class="page-title">Моноподы для селфи</h1>
                 <ul class="breadcrumbs">
@@ -213,21 +215,21 @@
                     </a>
                     <div class="footer-top-wrapper">
                         <ul class="user-navigation">
-                    <li class="user-name">
-                        <a href="#"><img src="img/footer-user.svg" width="13" height="12" alt=""><i class="icon-text">Валентин Петухов</i></a>
-                    </li>
-                    <li class="logout-link">
-                        <a href="#">Выйти</a>
-                    </li>
-                </ul>
+                            <li class="footer-user-name">
+                                <a href="#"><img src="img/footer-user.svg" width="13" height="12" alt=""><i class="icon-text">Валентин Петухов</i></a>
+                            </li>
+                            <li class="footer-logout-link">
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
                         <ul class="purchase">
-                    <li class="compare">
-                        <a href="#"><img src="img/footer-compare.svg" width="10" height="10" alt=""><i class="icon-text">Сравнить</i></a>
-                    </li>
-                    <li class="cart">
-                        <a href="#"><img src="img/footer-cart.svg" width="12" height="12" alt=""><i class="icon-text">Корзина</i></a>
-                    </li>
-                </ul>
+                            <li class="footer-compare">
+                                <a href="#"><img src="img/footer-compare.svg" width="10" height="10" alt=""><i class="icon-text">Сравнить</i></a>
+                            </li>
+                            <li class="footer-cart">
+                                <a href="#"><img src="img/footer-cart.svg" width="12" height="12" alt=""><i class="icon-text">Корзина</i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer-middle">

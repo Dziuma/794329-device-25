@@ -105,7 +105,7 @@ img {
 
 .main-header-logo {
     position: absolute;
-    top: -64px;
+    top: -62px;
 }
 
 .main-header .top-navigation {
@@ -197,24 +197,30 @@ img {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.login-link a {
+.login-link a,
+.user-name a {
     position: relative;
     padding-left: 27px;
+    margin-right: 20px;
 }
 
-.login-link a::before {
+.navigation-wrapper a::before {
     content: '';
     
     position: absolute;
-    top: 3px;
-    left: -2px;
     
     width: 16px;
     height: 16px;
     
-    background-image: url(../img/user.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
+}
+
+.login-link a::before {
+    top: 3px;
+    left: -2px;
+        
+    background-image: url(../img/user.svg);
 }
 
 .compare a,
@@ -225,33 +231,24 @@ img {
 }
 
 .compare a::before {
-    content: '';
-    
-    position: absolute;
     top: 5px;
     left: 0;
     
-    width: 16px;
-    height: 16px;
-    
     background-image: url(../img/compare.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
 }
 
 .cart a::before {
-    content: '';
-    
-    position: absolute;
     top: 3px;
     left: -2px;
     
-    width: 16px;
-    height: 16px;
-    
     background-image: url(../img/cart.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
+}
+
+.user-name a::before {
+    top: 3px;
+    left: -2px;
+    
+    background-image: url(../img/user.svg);
 }
 
 .main-navigation ul {
@@ -341,10 +338,11 @@ img {
     width: 1100px;
     min-height: 144.4px;
     padding-top: 20px;
+    padding-left: 60px;
     
     position: absolute;
     top: 25px;
-    left: 0;
+    left: -60px;
     
     background-color: #f7e296;
 }
@@ -1056,6 +1054,7 @@ table.promo-item-features {
 /* CATALOG */
 
 .inner-page .main-header {
+    min-height: 141px;
     margin-bottom: 44px;
 }
 
