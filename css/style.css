@@ -1155,7 +1155,6 @@ table.promo-item-features {
 
 .filters-title,
 .sorting-title {
-    min-height: 70px;
     margin: 0;
     
     font-family: 'Gilroy', Arial, sans-serif;
@@ -1168,29 +1167,46 @@ table.promo-item-features {
 
 .filters-title {
     padding-left: 60px;
+    margin-bottom: 68px;
     
     background-color: #dcdcdc;
-    
     line-height: 70px;
 }
 
 .filter-form {
+    width: 200px;
     padding-left: 60px;
 }
 
 .filter-form  fieldset {
+    position: relative;
+    
+    margin: 0;
+    padding: 60px 0 40px;
+    border: none;
+    border-top: 2px solid black;
+    
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0.18px;
     
+}
+
+.filter-form legend {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.filter-form p {
     margin: 0;
-    padding: 0;
-    border: none;
 }
 
 .filter-form label {
+    padding-left: 40px;
+    
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
@@ -1198,10 +1214,75 @@ table.promo-item-features {
     letter-spacing: 0.14px;
 }
 
+.checkbox {
+    position: absolute;
+    width: 28px;
+    height: 23px;
+    margin-top: 8px;
+    margin-left: -40px;
+    background-color: transparent;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+input[type="checkbox"]:checked + .checkbox {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.checkbox:hover,
+label:hover .checkbox {
+    opacity: 0.6;
+}
+
+.checkbox:active,
+label:active .checkbox {
+    opacity: 1;
+}
+
+.radio {
+    position: absolute;
+    width: 26px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: -40px;
+    background-color: transparent;
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="radio"]:checked + .radio {
+    background-image: url(../img/radio-on.svg);
+}
+
+.radio:hover,
+label:hover .radio {
+    opacity: 0.6;
+}
+
+.radio:active,
+label:active .radio {
+    opacity: 1;
+}
+
+.filter-form .button {
+    width: 100%;
+}
+
 .sorting {
     display: flex;
+    align-items: center;
+    min-height: 70px;
+    padding-left: 72px;
+    
+    position: relative;
     
     background-color: #efefef;
+}
+
+.sorting-title {
+    margin-right: 52px;
 }
 
 .sorting-list {
@@ -1217,19 +1298,41 @@ table.promo-item-features {
 }
 
 .sorting-item a {
+    margin-right: 30px;
+    
     color: #000000;
     opacity: 0.3;
+}
+
+.arrow-up,
+.arrow-down {
+    position: absolute;
+    top: auto;
+    right: 29px;
+    
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent black transparent;
+    
+    opacity: 0.2;
+}
+
+.arrow-down {
+    right: 0;
+    top: auto;
+    transform: rotate(180deg);
 }
 
 a.sorting-item-active {
     opacity: 1;
 }
 
-.sorting-item a:hover:not(.sorting-item-active) {
+.sorting a:hover {
     opacity: 0.6;
 }
 
-.sorting-item a:active:not(.sorting-item-active) {
+.sorting a:active {
     opacity: 1;
 }
 

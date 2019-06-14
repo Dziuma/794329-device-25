@@ -86,35 +86,56 @@
                             <fieldset>
                                 <legend>Цвет</legend>
                                 <p>
-                                    <input id="black" type="checkbox" name="color-black" checked>
-                                    <label for="black">Черный</label>
+                                    <label for="black">
+                                        <input class="visually-hidden" id="black" type="checkbox" name="color-black" checked>
+                                        <span class="checkbox"></span>
+                                        Черный
+                                    </label>
                                 </p>
                                 <p>
-                                    <input id="white" type="checkbox" name="color-white">
-                                    <label for="white">Белый</label>
+                                    <label for="white">
+                                        <input class="visually-hidden" id="white" type="checkbox" name="color-white">
+                                        <span class="checkbox"></span>
+                                        Белый
+                                    </label>
                                 </p>
                                 <p>
-                                    <input id="blue" type="checkbox" name="color-blue" checked>
-                                    <label for="blue">Синий</label>
+                                    <label for="blue">
+                                        <input class="visually-hidden" id="blue" type="checkbox" name="color-blue" checked>
+                                        <span class="checkbox"></span>
+                                        Синий
+                                    </label>
                                 </p>
                                 <p>
-                                    <input id="red" type="checkbox" name="color-red" checked>
-                                    <label for="red">Красный</label>
+                                    <label for="red">
+                                        <input class="visually-hidden" id="red" type="checkbox" name="color-red" checked>
+                                        <span class="checkbox"></span>
+                                        Красный
+                                    </label>
                                 </p>
                                 <p>
-                                    <input id="pink" type="checkbox" name="color-pink">
-                                    <label for="pink">Розовый</label>
+                                    <label for="pink">
+                                        <input class="visually-hidden" id="pink" type="checkbox" name="color-pink">
+                                        <span class="checkbox"></span>
+                                        Розовый
+                                    </label>
                                 </p>
                             </fieldset>
                             <fieldset>
                                 <legend>Bluetooth</legend>
                                 <p>
-                                    <input id="blutooth-yes" type="radio" name="bluetooth" value="blutooth-yes" checked>
-                                    <label for="blutooth-yes">Есть</label>
+                                    <label for="blutooth-on">
+                                        <input class="visually-hidden" id="blutooth-on" type="radio" name="bluetooth" value="blutooth-on" checked>
+                                        <span class="radio"></span>
+                                        Есть
+                                    </label>
                                 </p>
-                                <p>
-                                    <input id="bluetooth-no" type="radio" name="bluetooth" value="bluetooth-no">
-                                    <label for="bluetooth-no">Нет</label>
+                                <p> 
+                                    <label for="bluetooth-off">
+                                        <input class="visually-hidden" id="bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
+                                        <span class="radio"></span>
+                                        Нет
+                                    </label>
                                 </p>
                             </fieldset>
                             <button class="button" type="submit">Показать</button>
@@ -136,8 +157,8 @@
                                     <a href="#">По популярности</a>
                                 </li>
                             </ul>
-                            <a href="#" class="sorting-up visually-hidden">По убыванию</a>
-                            <a href="#" class="sorting-down visually-hidden">По возростанию</a>
+                            <a href="#" class="arrow-up"><span class="visually-hidden">По убыванию</span></a>
+                            <a href="#" class="arrow-down sorting-item-active"><span class="visually-hidden">По возростанию</span></a>
                         </div>
                         <ul class="catalog-list">
                             <li class="catalog-item">
