@@ -82,7 +82,23 @@
                 <div class="wrapper catalog-columns">
                     <section class="filters">
                         <h2 class="filters-title">Фильтр:</h2>
-                        <form class="filter-form" action="#" method="get">                            
+                        <form class="filter-form" action="#" method="get">
+                            <fieldset>
+                                <legend>Стоимость</legend>
+                                <div class="range-filter">
+                                    <div class="range-controls">
+                                        <div class="track">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <button class="thumb thumb-min"></button>
+                                        <button class="thumb thumb-max"></button>
+                                    </div>
+                                    <div class="price-controls">
+                                        <label class="min-price">от <input type=text name="min-price" value="0"></label>
+                                        <label class="max-price">до <input type=text name="max-price" value="5000"></label>
+                                    </div>
+                                </div>
+                            </fieldset>                            
                             <fieldset>
                                 <legend>Цвет</legend>
                                 <p>
@@ -224,7 +240,7 @@
                         </ul>
                         <ul class="pagination">
                             <li class="pagination-item">
-                                <button class="button" type="button">Вперед</button>
+                                <button class="button" type="button">Назад</button>
                             </li>
                             <li class="pagination-item">
                                 <button class="button active" type="button">1</button>
@@ -236,7 +252,7 @@
                                 <button class="button" type="button">3</button>
                             </li>
                             <li class="pagination-item">
-                                <button class="button" type="button">Назад</button>
+                                <button class="button" type="button">&nbsp;Вперед</button>
                             </li>
                         </ul>
                     </section>
