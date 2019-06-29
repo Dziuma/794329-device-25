@@ -5,7 +5,7 @@
         <title>Device</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         
@@ -143,12 +143,12 @@
                         </li>
                     </ul>
                     <p class="promo-slider-controls">
-                        <button class="slider-control active" type="button" aria-label="Первый слайд"></button>
-                        <button class="slider-control" type="button" aria-label="Второй слайд"></button>
-                        <button class="slider-control" type="button" aria-label="Третий слайд"></button>
+                        <button class="slider-control dot active" type="button" aria-label="Первый слайд"></button>
+                        <button class="slider-control dot" type="button" aria-label="Второй слайд"></button>
+                        <button class="slider-control dot" type="button" aria-label="Третий слайд"></button>
                     </p>
                 </section>
-           
+                
                 <section class="thumbnails-menu">
                     <h2 class="visually-hidden">Каталог товаров</h2>
                     <ul class="thumbnails-list">
@@ -289,7 +289,7 @@
                     <section class="contacts">
                         <h2 class="contacts-title">Контакты</h2>
                         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                        <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%B0%D1%80%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%BE,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%96%D1%8F,+143350/@55.5932909,37.2097741,17.78z/data=!4m5!3m4!1s0x46b556ec92966d99:0x269763cb5898d1a7!8m2!3d55.593409!4d37.210828?hl=uk&authuser=0"><img class="map" src="img/map.jpg" width="560" height="222" alt="Ищите нас по адресу: г. Москва, ул. Строителей, 15."></a>
+                        <a class="open-map" href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%B0%D1%80%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%BE,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%96%D1%8F,+143350/@55.5932909,37.2097741,17.78z/data=!4m5!3m4!1s0x46b556ec92966d99:0x269763cb5898d1a7!8m2!3d55.593409!4d37.210828?hl=uk&authuser=0"><img class="map" src="img/map.jpg" width="560" height="222" alt="Ищите нас по адресу: г. Москва, ул. Строителей, 15."></a>
                         <a class="button write-us" href="#">Напишите нам</a>
                     </section>
                 </div>
@@ -345,15 +345,15 @@
             <form class="message-form" action="#" method="post">
                 <p class="message-item">
                     <label for="name-field">Ваше имя:</label>
-                    <input id="name-field" type="text" name="user-name" placeholder="Имя Фамилия">
+                    <input onclick="removeInvalid()" id="name-field" class="input-field" type="text" name="user-name" placeholder="Имя Фамилия" autofocus>
                 </p>
                 <p class="message-item">
                     <label for="email-field">Ваш e-mail:</label>
-                    <input id="email-field" type="email" name="user-email" placeholder="email@example.com">
+                    <input onclick="removeInvalid()" id="email-field" class="input-field" type="email" name="user-email" placeholder="email@example.com">
                 </p>
                 <p class="message-item">
                     <label for="message-field">Текст письма:</label>
-                    <textarea id="message-field" name="user-message" placeholder="В свободной форме"></textarea>
+                    <textarea onclick="removeInvalid()" id="message-field" class="input-field" name="user-message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
@@ -362,41 +362,16 @@
 
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1127.246231722499!2d37.20994039695891!3d55.59344246158023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556ec92966d99%3A0x269763cb5898d1a7!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNCw0YDRg9GI0LrQuNC90L4sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGW0Y8sIDE0MzM1MA!5e0!3m2!1suk!2sua!4v1561737151064!5m2!1suk!2sua" width="960" height="599" frameborder="0" allowfullscreen></iframe>
+            
             <p>
-                <img src="img/map-big.jpg" alt="Ищите нас по адресу Москва, ул. Строителей 15">
+                <img src="img/map-big.jpg" width="960" height="599" alt="Ищите нас по адресу Москва, ул. Строителей 15">
             </p>
             <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
         </section>
         
-        <script>
-            var writeUs = document.querySelector(".write-us");
-            
-            var popup = document.querySelector(".modal-message");
-            var close = popup.querySelector(".modal-close");
-            
-            var form = popup.querySelector("form");
-            var userName = popup.querySelector("[name=user-name]");
-            var userEmail = popup.querySelector("[name=user-email]");
-            var userMessage = popup.querySelector("[name=user-message]");
-            
-            writeUs.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-                userName.focus();
-            });
-            
-            close.addEventListener("click", function(evt) {
-                evt.preventDefault;
-                popup.classList.remove("modal-show");
-            })
-            
-            form.addEventListener("submit", function(evt) {
-                if (!userName.value || !userEmail.value || !userMessage.value) {
-                    evt.preventDefault();
-                    console.log("Заполните все поля формы пожалуйста");
-                }
-            })
-        </script>
+        <script src="js/scripts.min.js"></script>
         
     </body>
 </html>

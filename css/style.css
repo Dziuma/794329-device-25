@@ -645,7 +645,7 @@ table.promo-item-features {
 }
 
 .services-slider {
-    height: 288px;
+    min-height: 288px;
     
     background-color: #e5e5e5;
 }
@@ -1753,6 +1753,7 @@ a.sorting-item-active {
 
 .pagination-item:not(:first-child):not(:last-child) .button:hover {
     color: #666666;
+    cursor: pointer;
 }
 
 .pagination-item:not(:first-child):not(:last-child) .button:active {
@@ -1768,6 +1769,7 @@ a.sorting-item-active {
 .pagination-item:first-child .button:hover,
 .pagination-item:last-child .button:hover {
     background-color: #d9d9d9;
+    cursor: pointer;
 }
 
 .pagination-item:first-child .button:active,
@@ -1854,7 +1856,7 @@ a.sorting-item-active {
     letter-spacing: 0;
 }
 
-.message-form input:invalid {
+.message-form .invalid {
     background-color: #f6dada;
 }
 
@@ -1899,6 +1901,7 @@ a.sorting-item-active {
     position: absolute;
     top: 22px;
     right: 22px;
+    z-index: 3;
     
     width: 55px;
     height: 55px;
@@ -1951,7 +1954,19 @@ a.sorting-item-active {
     width: 960px;
 }
 
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+    
+    border: 0;
+}
+
 .modal-map p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
     margin: 0;
 }
 
