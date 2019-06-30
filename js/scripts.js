@@ -32,6 +32,7 @@ writeUs.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
     evt.preventDefault;
     popup.classList.remove("modal-show");
+    overlay.style.display = "none";
 });
 
 overlay.addEventListener("click", function(evt) {
@@ -83,6 +84,7 @@ openMap.addEventListener("click", function(evt) {
 closeMap.addEventListener("click", function(evt) {
     evt.preventDefault;
     map.classList.remove("modal-show");
+    overlay.style.display = "none";
 });
 
 overlay.addEventListener("click", function(evt) {
