@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 33px; 
+    margin-bottom: 19px; 
 }
 
 .main-header .user-navigation,
@@ -137,7 +137,10 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    
     position: relative;
+    top: -3px;
+    
     width: 440px;
     margin-top: -3px;
 }
@@ -151,8 +154,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
     
     padding-left: 40px;
+    padding-bottom: 7px;
     background-color: transparent;
     border: none;
+    border-bottom: 2px solid transparent;
 }
 
 .search-form input:hover {
@@ -169,7 +174,7 @@ input[type="radio"].visually-hidden {
 
 .search-icon {
     position: absolute;
-    top: 9px;
+    top: 12px;
     left: 3px;
     
     width: 16px;
@@ -183,6 +188,7 @@ input[type="radio"].visually-hidden {
 .search-button {
     font: inherit;
     
+    padding: 8px 19px;
     border: 2px solid black;    
     background-color: transparent;
     
