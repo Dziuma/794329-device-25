@@ -509,13 +509,16 @@ table.promo-item-features {
     padding-bottom: 8px;
     border: none;
 }
-
+.promo-item-features tr {
+    text-align: left;
+}
 .promo-item-features th {
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
     color: #464646;
     letter-spacing: 0.13px;
+    text-align: left;
     
     padding: 0;
     border: none;
@@ -1493,8 +1496,7 @@ label:active .radio {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 70px;
-    padding-left: 72px;
+    padding: 23px 0 23px 72px;
     
     position: relative;
     
@@ -1529,7 +1531,7 @@ label:active .radio {
 .arrow-up,
 .arrow-down {
     position: absolute;
-    top: auto;
+    top: 25px;
     right: 25px;
     
     width: 10px;
@@ -1554,7 +1556,6 @@ label:active .radio {
 
 .arrow-down {
     right: -5px;
-    top: auto;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
