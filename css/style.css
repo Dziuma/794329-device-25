@@ -1743,43 +1743,43 @@ a.sorting-item-active {
     margin-left: auto;
 }
 
-.pagination .button {
+.pagination a {
+    display: block;
     font-size: 16px;
     line-height: 24px;
-    background-image: none;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
 }
 
-.pagination-item:not(:first-child):not(:last-child) .button {
+.pagination-item:not(:first-child):not(:last-child) a {
     padding: 15px;
 }
 
-.pagination-item:not(:first-child):not(:last-child) .button:not(.active) {
+.pagination-item:not(:first-child):not(:last-child) a:not(.active) {
     color: #b2b2b2;
 }
 
-.pagination-item:not(:first-child):not(:last-child) .button:hover {
+.pagination-item:not(:first-child):not(:last-child) a:hover {
     color: #666666;
-    cursor: pointer;
 }
 
-.pagination-item:not(:first-child):not(:last-child) .button:active {
+.pagination-item:not(:first-child):not(:last-child) a:active {
     color: #000000;
 }
 
-.pagination-item:first-child .button,
-.pagination-item:last-child .button {
-    height: 70px;
-    padding: 0 30px;
+.pagination-item:first-child a,
+.pagination-item:last-child a {
+    padding: 23px 30px;
 }
 
-.pagination-item:first-child .button:hover,
-.pagination-item:last-child .button:hover {
+.pagination-item:first-child a:hover,
+.pagination-item:last-child a:hover {
     background-color: #d9d9d9;
-    cursor: pointer;
 }
 
-.pagination-item:first-child .button:active,
-.pagination-item:last-child .button:active {
+.pagination-item:first-child a:active,
+.pagination-item:last-child a:active {
     color: #979797;
 }
 
