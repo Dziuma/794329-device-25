@@ -553,7 +553,7 @@ table.promo-item-features {
     cursor: pointer;
 }
 
-.slider-control.active {
+.promo-slider-controls .active {
     box-shadow: 
         0 0 0 3.5px white inset,
         0 0 0 4.5px black inset;
@@ -602,7 +602,7 @@ table.promo-item-features {
 }
 
 .thumbnails-image-1 {
-    background-image: url(../img/catalog-menu-1.svg)
+    background-image: url(../img/catalog-menu-1.svg);
 }
 
 .thumbnails-image-2 {
@@ -611,19 +611,19 @@ table.promo-item-features {
 }
 
 .thumbnails-image-3 {
-    background-image: url(../img/catalog-menu-3.svg)
+    background-image: url(../img/catalog-menu-3.svg);
 }
 
 .thumbnails-image-4 {
-    background-image: url(../img/catalog-menu-4.svg)
+    background-image: url(../img/catalog-menu-4.svg);
 }
 
 .thumbnails-image-5 {
-    background-image: url(../img/catalog-menu-5.svg)
+    background-image: url(../img/catalog-menu-5.svg);
 }
 
 .thumbnails-image-6 {
-    background-image: url(../img/catalog-menu-6.svg)
+    background-image: url(../img/catalog-menu-6.svg);
 }
 
 .thumbnails-title {
