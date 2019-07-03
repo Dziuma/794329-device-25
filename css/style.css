@@ -365,6 +365,12 @@ input[type="radio"].visually-hidden {
     display: flex;
 }
 
+.dropdown-link:focus + .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;            
+}
+
 .dropdown .col-1 {
     min-width: 220px;
 }
@@ -542,7 +548,6 @@ table.promo-item-features {
 }
 
 .promo-slider .slider-control {
-    display inline-block;
     width: 13px;
     height: 13px;
     padding: 0;
@@ -554,6 +559,9 @@ table.promo-item-features {
 }
 
 .promo-slider-controls .active {
+    -webkit-box-shadow: 
+        0 0 0 3.5px white inset,
+        0 0 0 4.5px black inset;
     box-shadow: 
         0 0 0 3.5px white inset,
         0 0 0 4.5px black inset;
@@ -561,6 +569,9 @@ table.promo-item-features {
 
 .thumbnails-menu {
     margin-top: -15px;
+    
+    position: relative;
+    z-index: 2;
 }
 
 .thumbnails-list {
@@ -581,7 +592,7 @@ table.promo-item-features {
     width: 160px;
 }
 
-.thumbnails-item a {
+.thumbnails-item-link {
     display: block;
 }
 
@@ -636,12 +647,12 @@ table.promo-item-features {
     letter-spacing: 0.18px;
 }
 
-.thumbnails-item a:hover .thumbnails-background {
+.thumbnails-item-link:hover .thumbnails-background {
     background-color: #f0c52e;
 }
 
-.thumbnails-item a:active .thumbnails-image,
-.thumbnails-item a:active .thumbnails-title{
+.thumbnails-item-link:active .thumbnails-image,
+.thumbnails-item-link:active .thumbnails-title{
     opacity: 0.3;
 }
 
@@ -969,6 +980,8 @@ table.promo-item-features {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     min-width: 490px;
     margin-top: -5px;
 }
@@ -1075,6 +1088,7 @@ table.promo-item-features {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    max-width: 600px;
 }
 
 .footer-navigation li:not(:last-child) {
@@ -1224,6 +1238,7 @@ table.promo-item-features {
     content: '';
     
     display: inline-block;
+    vertical-align: baseline;
     
     position: relative;
     top: -2px;
@@ -1362,20 +1377,17 @@ table.promo-item-features {
 
 .range-controls .thumb {
     position: absolute;
-    top: -11px;
+    top: -10px;
     
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 22px;
     padding: 0;
-    border: 9px solid #ffffff;
+    border: none;
     border-radius: 50%;
-    box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     
-    background-color: #ababab;
-    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-    -webkit-box-sizing: content-box;
-    
+    background-image: url(../img/filter-button.png);
     cursor: pointer;
 }
 
@@ -1385,6 +1397,12 @@ table.promo-item-features {
 
 .range-controls .thumb-max {
     left: 110px;
+}
+
+.range-controls .thumb:active {
+    width: 22px;
+    height: 24px;
+    background-size: 100%;
 }
 
 .filter-form p {
@@ -1441,6 +1459,12 @@ input[type="checkbox"]:checked + .checkbox {
     background-image: url(../img/checkbox-on.svg);
 }
 
+input[type="checkbox"]:focus + .checkbox {
+    border:1px solid #4D90FE;
+    -webkit-box-shadow: 0px 0px 5px  #4D90FE;
+    box-shadow: 0px 0px 5px  #4D90FE;
+}
+
 .checkbox:hover,
 label:hover .checkbox {
     opacity: 0.6;
@@ -1467,6 +1491,17 @@ input[type="radio"]:checked + .radio {
     background-image: url(../img/radio-on.svg);
 }
 
+input[type="radio"]:focus + .radio {
+    border:1px solid #4D90FE;
+    -webkit-box-shadow: 0px 0px 5px  #4D90FE;
+    box-shadow: 0px 0px 5px  #4D90FE;
+}
+
+.filter-form input[disabled] + .checkbox,
+.filter-form input[disabled] + .radio {
+    opacity: 0.25;
+}
+
 .radio:hover,
 label:hover .radio {
     opacity: 0.6;
@@ -1488,7 +1523,7 @@ label:active .radio {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 23px 0 23px 72px;
+    padding: 23px 40px 23px 72px;
     
     position: relative;
     
@@ -1503,6 +1538,8 @@ label:active .radio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     
@@ -1855,7 +1892,9 @@ a.sorting-item-active {
     letter-spacing: 0;
 }
 
-.message-form .invalid {
+.message-form .invalid,
+.message-form input[required],
+.message-form textarea[required] {
     background-color: #f6dada;
 }
 
