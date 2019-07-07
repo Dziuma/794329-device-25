@@ -25,6 +25,7 @@ try {
 
 writeUs.addEventListener("click", function(evt) {
     evt.preventDefault();
+    popup.classList.add("modal-appear");
     popup.classList.add("modal-show");
     overlay.style.display = "block";
 });
@@ -32,12 +33,14 @@ writeUs.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
     evt.preventDefault;
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-appear");
     overlay.style.display = "none";
 });
 
 overlay.addEventListener("click", function(evt) {
     evt.preventDefault;
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-appear");
     overlay.style.display = "none";
 });
 
@@ -66,6 +69,7 @@ window.addEventListener("keydown", function(evt) {
         evt.preventDefault();
         if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
+            overlay.style.display = "none";
         }
     }
 });
@@ -98,6 +102,7 @@ window.addEventListener("keydown", function(evt) {
         evt.preventDefault();
         if (map.classList.contains("modal-show")) {
             map.classList.remove("modal-show");
+            overlay.style.display = "none";
         }
     }
 });
